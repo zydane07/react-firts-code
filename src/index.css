@@ -8,5 +8,9 @@
 }
 
 .navbar-menu {
-  @apply hover:text-white rounded-md p-2 hover:bg-sky-700;
+  @apply rounded-md p-2 hover:bg-sky-700 hover:text-white;
+}
+
+.button {
+  @apply rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700;
 }

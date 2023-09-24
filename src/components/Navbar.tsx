@@ -1,14 +1,17 @@
 const Navbar = () => {
   const title = "Zydane Blog";
   return (
-    <nav className="navbar flex justify-between items-center p-5 mx-auto border-b-2 my-0 max-w-xl ">
-      <h1 className="text-blue-800 font-bold text-2xl">{title}</h1>
+    <nav className="navbar mx-auto my-0 flex max-w-xl items-center justify-between border-b-2 p-5 ">
+      <h1 className="text-2xl font-bold text-blue-800">{title}</h1>
       <div className="links space-x-5 ">
         <a className="navbar-menu " href="/">
           Home
         </a>
         <a className="navbar-menu " href="/create">
           Create Post
+        </a>
+        <a className="navbar-menu " href="/training">
+          training
         </a>
       </div>
     </nav>
