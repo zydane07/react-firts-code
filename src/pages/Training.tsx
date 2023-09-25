@@ -4,7 +4,7 @@ const Training = () => {
   const [name, setName] = useState("zydane");
   const [age, setAge] = useState(21);
 
-  const showLog = (log, e) => {
+  const showLog = (log: any, e: any) => {
     console.log("Hai ", log, e);
   };
 
