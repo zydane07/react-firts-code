@@ -21,7 +21,6 @@ const Training = () => {
       }}
     >
       <h1 className="text-4xl font-bold">Training Pages</h1>
-
       <div className="my-4 space-x-2 text-center">
         <button
           className="button"

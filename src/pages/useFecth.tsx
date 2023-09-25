@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import Error from "./home/Error";
+import Error from "../components/Error";
 
 const useFecth = (url: any) => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState<any | null>(null);
   const [isPending, setIsPending] = useState(true);
   const [error, setError] = useState(null);
 

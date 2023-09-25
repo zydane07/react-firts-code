@@ -1,5 +1,5 @@
 import PostList from "./PostList";
-import Loading from "./Loading";
+import Loading from "../../components/Loading";
 import useFecth from "../useFecth";
 
 const Home = () => {
@@ -15,14 +15,12 @@ const Home = () => {
 
   return (
     <div
-      className="home mx-auto max-w-xl"
+      className="home container-content"
       style={{
         height: "80vh",
       }}
     >
-      <h1 className="my-6 text-center text-4xl font-bold text-blue-900">
-        {title}
-      </h1>
+      <h1 className="text-header">{title}</h1>
       {error && <div>{error}</div>}
       {isPending && <Loading />}
       {posts && <PostList posts={posts} title="All Posts" />}

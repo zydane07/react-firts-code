@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const PostList = ({ posts, title }: any) => {
   //   const posts = props.posts;
   //   const title = props.title;
@@ -7,15 +9,15 @@ const PostList = ({ posts, title }: any) => {
       <h2 className="px-4 text-2xl font-bold text-black">{title}</h2>
       {posts.map((post: any) => (
         <div
-          className="hover:boxs my-5 flex cursor-pointer items-center justify-between border-b px-4 py-3 hover:rounded-sm hover:shadow"
+          className=" my-5 cursor-pointer border-b px-4 py-3 hover:rounded-sm hover:shadow"
           key={post.id}
         >
-          <div>
+          <Link to={`/posts/${post.id}`}>
             <h2 className="text-xl font-bold text-blue-800">{post.title}</h2>
-            <h2 className="text-gray-400">
+            <p className="text-gray-400">
               Written by: <span className="font-bold ">{post.author}</span>{" "}
-            </h2>
-          </div>
+            </p>
+          </Link>
 
           {/* <button
             className="button-delete"
