@@ -4,6 +4,7 @@ import Home from "./pages/home/Home";
 import Training from "./pages/Training";
 import Create from "./pages/Create";
 import PostDetail from "./pages/home/PostDetail";
+import NotFound from "./components/NotFound";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
             <Route path="/create" element={<Create />} />
             <Route path="/posts/:id" element={<PostDetail />} />
             <Route path="/training" element={<Training />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </>
